@@ -19,3 +19,12 @@ async function testFetch() {
 
 //fillTable()
 testFetch()
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+});
+
+$("popover-dismiss").popover(
+{
+    trigger: "focus"
+});
