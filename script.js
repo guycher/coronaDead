@@ -28,3 +28,8 @@ $("popover-dismiss").popover(
 {
     trigger: "focus"
 });
+
+$('#popoverOption').popover(
+{
+    trigger: "hover"
+});
