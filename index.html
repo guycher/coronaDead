@@ -12,6 +12,7 @@
 body {
   direction: rtl;
 }
+
 </style>
 </head>
 <body>
@@ -19,7 +20,7 @@ body {
         <table id="table" data-height="460">
         <thead>
             <tr>
-                <th data-field="תאריך" >תאריך</th>
+                <th data-field="תאריך">תאריך</th>
                 <th data-field="נפטרים ליום">נפטרים ליום</th>
                 <th data-field="מספר נפטרים מצטבר">מספר נפטרים מצטבר</th>
             </tr>
@@ -29,7 +30,9 @@ body {
     </div>
 
     <button type="button" class="btn btn-primary" data-toggle="popover" data-trigger="focus" title="תאריך: מספר נפטרים" data-content="שמות ופרטים?" data-placement="left" >תלחץ בשביל להציג מידע</button>
-    <a id="popoverOption" type="button" class="btn btn-primary" data-toggle="popover" data-trigger="focus" title="תאריך: מספר נפטרים" data-content="שמות ופרטים?" data-placement="left" >תעבור עם העכבר מעל</a>
+    <a class="btn btn-primary" data-content="שמות ופרטים?" data-placement="left" data-toggle="popover"
+       data-trigger="focus"
+       id="popoverOption" title="תאריך: מספר נפטרים" type="button">תעבור עם העכבר מעל</a>
 
 </body>
 <script src="script.js"></script>
