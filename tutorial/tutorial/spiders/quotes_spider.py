@@ -4,13 +4,13 @@ import scrapy
 class QuotesSpider(scrapy.Spider):
     name = "quotes"
     start_urls = [
-        'https://www.ynet.co.il/home/0,7340,L-31372,00.html',
+        'https://www.israelhayom.co.il/allarticles',
     ]
 
     def parse(self, response):
-        for quote in response.css('div.art_headlines_item'):
+        for quote in response.css('div.clearfix'):
             yield {
-                'text': quote.css('a.art_headlines_sub_title::text').get(),
+                'text': quote.css('p.ih-all-articles-article-title::text').get(),
 
             }
 
